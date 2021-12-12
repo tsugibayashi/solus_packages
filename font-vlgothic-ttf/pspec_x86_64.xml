@@ -1,0 +1,38 @@
+<PISI>
+    <Source>
+        <Name>font-vlgothic-ttf</Name>
+        <Packager>
+            <Name>Takashi Sugibayashi</Name>
+            <Email>sugibayashi@protonmail.com</Email>
+        </Packager>
+        <License>custom</License>
+        <PartOf>desktop.font</PartOf>
+        <Summary xml:lang="en">Japanese TrueType fonts from Vine Linux</Summary>
+        <Description xml:lang="en">Japanese TrueType fonts from Vine Linux
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>font-vlgothic-ttf</Name>
+        <Summary xml:lang="en">Japanese TrueType fonts from Vine Linux</Summary>
+        <Description xml:lang="en">Japanese TrueType fonts from Vine Linux
+</Description>
+        <PartOf>desktop.font</PartOf>
+        <Files>
+            <Path fileType="data">/usr/share/fonts/truetype/vlgothic/VL-Gothic-Regular.ttf</Path>
+            <Path fileType="data">/usr/share/fonts/truetype/vlgothic/VL-PGothic-Regular.ttf</Path>
+            <Path fileType="data">/usr/share/licenses/font-vlgothic-ttf/COPYING_MPLUS.txt</Path>
+            <Path fileType="data">/usr/share/licenses/font-vlgothic-ttf/COPYING_SAZANAMI.txt</Path>
+            <Path fileType="data">/usr/share/licenses/font-vlgothic-ttf/COPYING_VLGOTHIC.txt</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2021-12-12</Date>
+            <Version>20200720</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Takashi Sugibayashi</Name>
+            <Email>sugibayashi@protonmail.com</Email>
+        </Update>
+    </History>
+</PISI>

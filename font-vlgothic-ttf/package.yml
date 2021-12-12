@@ -1,0 +1,23 @@
+name       : font-vlgothic-ttf
+version    : 20200720
+release    : 1
+source     :
+    - http://ftp.riken.go.jp/Linux/ubuntu/ubuntu/pool/universe/f/fonts-vlgothic/fonts-vlgothic_20200720.orig.tar.xz : 297a3813675fbea12c5813b55a78091c9a5946515ecbf9fde8b8102e01c579f4
+license    : custom
+component  : desktop.font
+summary    : Japanese TrueType fonts from Vine Linux
+description: |
+    Japanese TrueType fonts from Vine Linux
+install    : |
+    fontdir=$installdir/usr/share/fonts/truetype/vlgothic/
+    install -dm644 $fontdir
+
+    cp -R $workdir/*.ttf $fontdir
+    install -D -m644 $workdir/LICENSE_E.mplus \
+                     $installdir/usr/share/licenses/font-vlgothic-ttf/COPYING_MPLUS.txt
+    install -D -m644 $workdir/README.sazanami \
+                     $installdir/usr/share/licenses/font-vlgothic-ttf/COPYING_SAZANAMI.txt
+    install -D -m644 $workdir/LICENSE.en \
+                     $installdir/usr/share/licenses/font-vlgothic-ttf/COPYING_VLGOTHIC.txt
+
+    chmod -R 00644 $installdir
